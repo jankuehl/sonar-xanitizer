@@ -72,7 +72,7 @@ jobs:
         with:
           license: ${{ secrets.XANITIZER_LICENSE }}
           updateOwaspDependencyCheckRepository: false
-          configFile: ../../Sonar-Xanitizer-Plugin.XanitizerConfig
+          configFile: Sonar-Xanitizer-Plugin.XanitizerConfig
 
       # Archiving the findings list reports
       - uses: actions/upload-artifact@v2
