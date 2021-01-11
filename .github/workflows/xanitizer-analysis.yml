@@ -68,10 +68,9 @@ jobs:
 
       # Run the security analysis with default settings
       - name: Xanitizer Security Analysis
-        uses: jankuehl/xanitizer-action-test@projectfile
+        uses: RIGS-IT/xanitizer-action@master
         with:
           license: ${{ secrets.XANITIZER_LICENSE }}
-          updateOwaspDependencyCheckRepository: false
           configFile: Sonar-Xanitizer-Plugin.XanitizerConfig
 
       # Archiving the findings list reports
